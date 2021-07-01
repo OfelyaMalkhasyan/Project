@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.wrapper_navbar{
+    width: 100%;
+    overflow: auto;
+    font-size: 25px;
+}
+.wrapper_logo img{
+    width: 300px;
+
+}
+
+.wrapper-navbar_links {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+
+.wrapper_navbar a {
+    text-decoration: none;
+    color:c;
+    
+}
+.wrapper_search-icon{
+    height: 40px;
+    width: 250px;
+    border: 1px solid #0085d3;
+    border-radius: 10px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:rgb(243, 243, 243);
+    align-items: center;
+    
+    
+}
+a:link {
+    color: #0085d3;
+  }
+  
+a:visited {
+    color: #0085d3;
+  }
+  
+a:hover {
+    color:black;
+  }
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 5s;
+    background-image: url("images/BossBaby1.jpg");
+    background-size: 100%;
+    animation-name: animate;
+    animation-direction: alternate;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes animate {
+    0%{
+        background-image: url("images/BossBaby2.jpg")
+        
+    }20%{
+        background-image: url("images/BossBaby3.jpg")
+    }40%{
+        background-image: url("images/BossBaby4.jpg")
+    }60%{
+        background-image: url("images/BossBaby5.jpg")
+    }80%{
+        background-image: url("images/BossBaby6.jpg")
+    }100%{
+        background-image: url("images/BossBaby1.jpg")
+    }
+}
+
+@media  (max-width: 901px) {
+    
+    .wrapper_logo img{
+        width: 100px;
+    }
+    .wrapper_search-icon {
+        width: 150px;
+    }
+}
